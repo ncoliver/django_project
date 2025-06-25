@@ -3,5 +3,8 @@
 {%block title %} Homepage {% endblock %}
 
 {% block body %}
-    <h1>{{ my_thing }}</h1>
+    {% for post in posts %}
+        {{post.text}}
+        <hr>
+    {% endfor %}
 {% endblock body %}
