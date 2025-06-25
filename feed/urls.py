@@ -3,6 +3,6 @@ from .views import HomePageView
 
 app_name = 'feed'
 
-urlpatters = [
+urlpatterns = [
     path('', HomePageView.as_view(), name='index'),
 ]
